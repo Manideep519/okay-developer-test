@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+// layouts
+
+section {
+  padding: 60px 0;
+}
+
+// Typography starts
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  @media (min-width: 576px) {
+    margin: 60px;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: $red-heading-text-color;
+    font-weight: 900;
+    word-spacing: 4px;
+  }
+
+  &_underline {
+    display: inline-block;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #eb4d4b;
+
+    &-big {
+      width: 50px;
+    }
+    &-small {
+      width: 10px;
+    }
+  }
+}
+
+.text {
+  color: $light-white-text-color;
+  font-size: 18px;
+  line-height: 1.8;
+}
+// Typography ends
+
+// components starts
+.btn {
+  background-color: $dark-blue-text-color;
+  color: $white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  border: 1px solid $dark-blue-text-color;
+
+  &-rounded {
+    border-radius: 40px;
+  }
+
+  &-gradient {
+    border: none;
+    color: $dark-blue-text-color;
+    background-image: linear-gradient(to right, #f5f6fa 5%, #ffffff 100%);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $white;
+    color: $dark-blue-text-color;
+  }
+}
+
+// components ends
