@@ -1,0 +1,43 @@
+.bg_relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-page {
+  min-height: 860px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 50px 0;
+
+  @media (min-width: 567px) {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  &_text {
+    h1 {
+      font-weight: 900;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_image {
+    img {
+      max-width: 100%;
+    }
+
+    &_bg-effect {
+      position: absolute;
+      z-index: -999;
+      top: 0;
+      right: -15%;
+      top: -10%;
+      opacity: 0.05;
+    }
+  }
+}

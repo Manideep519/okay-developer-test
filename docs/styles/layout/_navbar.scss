@@ -1,0 +1,26 @@
+.navbar {
+  align-items: center;
+
+  .nav-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    height: 50px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    a.nav-link {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $black-text-color;
+
+      &:hover,
+      &:active {
+        color: $dark-blue-text-color;
+      }
+    }
+  }
+}

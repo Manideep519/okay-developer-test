@@ -1,0 +1,31 @@
+.services {
+  &_bg {
+    background-color: $light-gray-bg-color;
+  }
+
+  &_box {
+    background-color: #fffbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: 20px 0;
+
+    @media (min-width: 576px) {
+      font-display: row;
+      margin: 0;
+    }
+
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+    h5 {
+      margin: 20px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
